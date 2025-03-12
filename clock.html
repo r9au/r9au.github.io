@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./clock.css"></link>
+    <title>Alarmer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mtn"></div>
+        <div class="time">
+            <div class="hrs" id="hrs"></div>
+            <div class="cl">:</div>
+            <div class="min"></div>
+            <div class="cl">:</div>
+            <div class="sec"></div>
+        </div>
+        <div class="val">
+            <input type="time" class="value"/>
+        </div>
+    </div>
+    <script>
+        let alm="";
+        let flg=false;
+        document.querySelector(".value").addEventListener("input",()=>{
+            console.log(document.querySelector(".value").value)
+            alm=document.querySelector(".value").value
+            flg=false;
+        })
+        setInterval(() => {
+            document.querySelector(".hrs").innerHTML=new Date().getHours();
+            document.querySelector(".min").innerHTML=new Date().getMinutes();
+            document.querySelector(".sec").innerHTML=new Date().getSeconds();
+            document.querySelector(".mtn").innerHTML=new Date().toLocaleDateString([],{month:"long"});
+            if(alm==new Date().getHours()+":"+new Date().getMinutes() && flg===false){
+            alert("The time expired")
+            flg=true;
+        }
+        }, 1000);
+    </script>
+</body>
+</html>

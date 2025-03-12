@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.time{
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    margin-top: 88px;
+}
+.hrs{
+    font-size: 20vw;
+    font-family: sans-serif;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);;
+    background-clip: text;
+    color: transparent;
+}
+.min{
+    font-size: 20vw;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);;
+    background-clip: text;
+    color: transparent;
+    font-family: sans-serif;
+}
+.sec{
+    font-size: 20vw;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);;
+    background-clip: text;
+    color: transparent;
+    font-family: sans-serif;
+}
+.mtn{
+    font-size: 20vw;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);;
+    background-clip: text;
+    color: transparent;
+    margin-top: 75px;
+    font-family: sans-serif;
+}
+.cl{
+    font-size: 10vw;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);;
+    background-clip: text;
+    color: transparent;
+}
+.val{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+
+}
+.value{
+    width: 28vw;
+    height: 3vw;
+    border: 2px solid black;
+    padding: 3px;
+    margin: auto;
+}
